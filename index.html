@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<form>
+<progress value="0" id="photouploader" max="100">0%</progress><br><br>
+// get the file from user
+<input id="photo"class="file"type="file" name="mainimage" 
+            value="" onchange="getfile()"><br><br>
+// submit the chosen file
+<button id="submit_link"type="submit" name="button">Save</button>
+</form>
+<img id="iimage" height="300" width="300"/>
+<label for="imageurl">Image:</label>
+<input type="text" id="imageUrL" name="image">
+<form>
+<progress value="0" id="audiouploader" max="100">0%</progress><br><br>
+// get the file from user
+<input id="audio"class="file"type="file" name="mainaudio" 
+                value="" onchange="getaudiofile()"><br><br>
+// submit the chosen file
+<button id="submit_audio_link"type="submit" name="button">Save</button>
+</form>
+<audio controls id="waj">
+</audio>
+<label for="audiourl">Audio:</label>
+<input type="text" id="audioUrL" name="audio">
+    
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    
+    <script>
+       var firebaseConfig = {
+  apiKey: "AIzaSyBCI4U68lWW_37d9sXkbKVtZFNHNiKEISs",
+  authDomain: "audio-streaming-20b77.firebaseapp.com",
+  databaseURL: "https://audio-streaming-20b77-default-rtdb.firebaseio.com",
+  projectId: "audio-streaming-20b77",
+  storageBucket: "audio-streaming-20b77.appspot.com",
+  messagingSenderId: "765738115300",
+  appId: "1:765738115300:web:8074f0ef5ae04433164cf1",
+  measurementId: "G-VW7LE85X99"
+};
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+<script type="text/javascript" src="/index.js"></script>
+    
+</body>
+</html>

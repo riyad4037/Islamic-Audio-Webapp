@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Gloria+Hallelujah&family=Indie+Flower&family=Lobster&family=Moo+Lah+Lah&family=Pacifico&family=Permanent+Marker&display=swap');
+body{
+    background-color: lightyellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: Akaya Telivigala;
+}
+
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 90px;
+    background-color: aquamarine;
+    color: rgb(28, 150, 172);
+}
+
+nav ul li{
+    padding: 30px;
+    font-size: 35px;
+
+}
+
+
+
+.brands img{
+    width: 78px;
+    height: 78px;
+    margin-right: 10px;
+}
+
+.brands{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.wl{
+    font-size: 50px;
+    font-family: Roboto;
+    color: rgb(139, 189, 189);
+    font-weight: bolder;
+}
+
+.container{
+    min-height: 73.6vh;
+    background-color: black;
+    color: rgb(129, 41, 41);
+    display: flex;
+    margin: 23px;
+    width: 92%;
+    border-radius: 12px;
+    padding: 34px;
+
+    background-image: url('1.jpg');
+    
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: aquamarine;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.icons{
+    font-size: 35px;
+    color: black;
+    margin-top: 15px;
+}
+
+.icons i{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songitemcontainer{
+    margin-top: 30px;
+}
+
+.songitem{
+    height: 80px;
+    display: flex;
+    background-color: antiquewhite;
+    width: 350%;
+    color: black;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.songitem img{
+    width: 40px;
+    margin: 0 20px;
+}
+
+.timestamp{
+    margin: 0 20px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.audioinfo{
+    position: absolute;
+    margin-top: 30px;
+    left: 279px;
+}
+
+.audioinfo p{
+    font-weight: 900;
+    font-size: 26px;
+    color: black;
+}
+
+
+
+
